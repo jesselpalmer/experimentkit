@@ -1,0 +1,88 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*$py.class
+*.so
+*.egg
+*.egg-info/
+.eggs/
+build/
+dist/
+MANIFEST
+
+# === Virtual Environments ===
+.venv/
+venv/
+env/
+ENV/
+.Python
+
+# === OS / Editor junk ===
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# === Logs & Caches ===
+*.log
+*.out
+*.err
+*.pid
+*.gz
+logs/
+cache/
+*.pytest_cache/
+.pytest_cache/
+.tox/
+.coverage
+coverage.xml
+htmlcov/
+
+# === Env & Secrets ===
+.env
+.env.*
+!*.example
+*.key
+*.pem
+*.crt
+*.token
+*.secrets.json
+
+# === Docker ===
+pgdata/
+docker/*.pid
+docker/*.log
+
+# === Notebooks ===
+.ipynb_checkpoints/
+.notebooks/
+
+# === Data & Outputs ===
+examples/datasets/*.csv
+!examples/datasets/activation_small.csv   # keep one tiny demo dataset
+outputs/
+exports/
+reports/
+tmp/
+temp/
+
+# === Compiled JS / Frontend ===
+ui/static/js/*.map
+ui/node_modules/
+node_modules/
+npm-debug.log*
+
+# === IDE / Project Config ===
+*.iml
+*.sublime-workspace
+*.sublime-project
+*.code-workspace
+
+# === Misc ===
+*.bak
+*.tmp
+*.old

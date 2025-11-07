@@ -1,0 +1,26 @@
+# --- Web & Config ---
+fastapi
+uvicorn[standard]
+pydantic>=2.7
+pydantic-settings
+python-dotenv
+python-multipart
+jinja2
+requests
+httpx
+
+# --- DB & Migrations ---
+sqlalchemy>=2.0
+alembic
+psycopg2-binary
+
+# --- Data & Eval ---
+pandas
+numpy
+scikit-learn
+scipy
+duckdb
+
+# --- CLI & Utils ---
+typer
+pyyaml
