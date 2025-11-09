@@ -154,8 +154,8 @@ def call_llm(
         ValueError: If an unsupported provider is specified.
         RuntimeError: If the required API key is not found or package is not installed.
     """
-    client = get_llm_client(provider=provider)
     provider = provider.lower()
+    client = get_llm_client(provider=provider)
     
     if provider == "openai":
         # Prepare messages for OpenAI

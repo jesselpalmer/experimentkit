@@ -1,13 +1,16 @@
-from .utils import call_llm
+from ...utils import call_llm
 
-def hypothesis_agent(
+
+def hypothesis_refiner(
     hypothesis: str, 
     model: str = "gpt-4o-mini", 
     provider: str = "openai"
 ) -> str:
     """
-    Takes a hypothesis and returns a more specific, testable version of it
-    using the specified model and provider.
+    Refines a hypothesis to make it more specific, measurable, and testable.
+    
+    Takes an existing hypothesis and returns a refined version with clearer
+    metrics, conditions, and testability criteria.
     
     Args:
         hypothesis: The original hypothesis to refine.
@@ -42,3 +45,4 @@ def hypothesis_agent(
         max_tokens=250,
         temperature=0.7
     )
+

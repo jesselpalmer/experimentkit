@@ -1,4 +1,5 @@
-from .utils import call_llm
+from ...utils import call_llm
+
 
 def hypothesis_analyzer(
     refined_hypothesis: str,
@@ -54,3 +55,4 @@ def hypothesis_analyzer(
         max_tokens=400,
         temperature=0.6
     )
+

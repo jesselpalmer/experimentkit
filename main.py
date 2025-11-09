@@ -1,6 +1,8 @@
-from src.hypothesis_agent import hypothesis_agent
-from src.hypothesis_analyzer import hypothesis_analyzer
-from src.hypothesis_reviser import hypothesis_reviser  # optional, if you created it
+from src.agents import (
+    hypothesis_refiner,
+    hypothesis_analyzer,
+    hypothesis_reviser,
+)
 
 
 def main():
@@ -10,7 +12,7 @@ def main():
     print(hypothesis)
 
     # --- Step 2: Refinement ---
-    refined = hypothesis_agent(hypothesis)
+    refined = hypothesis_refiner(hypothesis)
     print("\n=== REFINED HYPOTHESIS ===")
     print(refined)
 
@@ -19,7 +21,7 @@ def main():
     print("\n=== ANALYZER FEEDBACK ===")
     print(reflection)
 
-    # --- Step 4: Revision (optional improvement loop) ---
+    # --- Step 4: Revision ---
     revised = hypothesis_reviser(refined, reflection)
     print("\n=== REVISED HYPOTHESIS ===")
     print(revised)
